@@ -1,3 +1,13 @@
-# multitenant-fpga
-This repository contains the data processing flow for our multi-tenant power side-channel classification process. This contains scripts neccesary for parsing raw sensor output, preprocessing data, and finally training and testing a classifier network.
+# multitenant-classification
+This repository contains the data processing flow for our multi-tenant power side-channel classification process. This includes scripts neccesary for parsing raw sensor output, preprocessing data, and finally training and testing a classifier network. The details of the classification pipeline can be found in our corresponding paper. 
 
+The datasets used in our paper are also contianed linked to this repository through git lfs. The following steps will assume you have pulled the data sets to your local environment, and that you are familar with these steps as we have outlined them in our paper. 
+
+The raw data returned from our Tunable Dual-Polarity Time-to-Digital Converter is first pre-processed into segments which the fft is computed on. The first step in this process is to decompress the files held by git lfs, which can be done in the `power_traces` directory with:
+```
+for f in *.tar.gz; do tar -xvf "$f"; done
+```
+All 100 traces captured for each 13 applications for each of the 5 test boards for each of the 6 sensor tuning arrangments discussed in our paper are then availible in raw form. To begin the pre-processing into segements and then ffts, run the following:
+```
+python3 fft.py
+```
