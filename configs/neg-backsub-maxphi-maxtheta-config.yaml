@@ -8,41 +8,31 @@ boards:
   - 'board_b6c5'
 
 board_fd: 
-  - './segments/fft/1912b3e4-0ae9-11ec-b551-00056b0100fd/Train_Segments_Neg_Detrend_8K/'
-  - './segments/fft/1912b3e4-0ae9-11ec-b551-00056b0100fd/Test_Segments_Neg_Detrend_8K/'
+  - './segments/fft/neg_edge_max_phi_max_theta_bg_sub/1912b3e4-0ae9-11ec-b551-00056b0100fd/Train_Segments_Detrend_8K/'
+  - './segments/fft/neg_edge_max_phi_max_theta_bg_sub/1912b3e4-0ae9-11ec-b551-00056b0100fd/Test_Segments_Detrend_8K/'
 board_ca:
-  - './segments/fft/15184b50-0ae9-11ec-896c-00056b00f8ca/Train_Segments_Neg_Detrend_8K/'
-  - './segments/fft/15184b50-0ae9-11ec-896c-00056b00f8ca/Test_Segments_Neg_Detrend_8K/'
+  - './segments/fft/neg_edge_max_phi_max_theta_bg_sub/15184b50-0ae9-11ec-896c-00056b00f8ca/Train_Segments_Detrend_8K/'
+  - './segments/fft/neg_edge_max_phi_max_theta_bg_sub/15184b50-0ae9-11ec-896c-00056b00f8ca/Test_Segments_Detrend_8K/'
 board_fe:
-  - './segments/fft/03bcc8ae-0ae9-11ec-a87e-00183e0248fe/Train_Segments_Neg_Detrend_8K/'
-  - './segments/fft/03bcc8ae-0ae9-11ec-a87e-00183e0248fe/Test_Segments_Neg_Detrend_8K/'
+  - './segments/fft/neg_edge_max_phi_max_theta_bg_sub/03bcc8ae-0ae9-11ec-a87e-00183e0248fe/Train_Segments_Detrend_8K/'
+  - './segments/fft/neg_edge_max_phi_max_theta_bg_sub/03bcc8ae-0ae9-11ec-a87e-00183e0248fe/Test_Segments_Detrend_8K/'
 board_2e:
-  - './segments/fft/269427fa-0ae9-11ec-8607-00183e02912e/Train_Segments_Neg_Detrend_8K/'
-  - './segments/fft/269427fa-0ae9-11ec-8607-00183e02912e/Test_Segments_Neg_Detrend_8K/'
+  - './segments/fft/neg_edge_max_phi_max_theta_bg_sub/269427fa-0ae9-11ec-8607-00183e02912e/Train_Segments_Detrend_8K/'
+  - './segments/fft/neg_edge_max_phi_max_theta_bg_sub/269427fa-0ae9-11ec-8607-00183e02912e/Test_Segments_Detrend_8K/'
 board_b6c5:
-  - './segments/fft/103e5f2a-0ae9-11ec-ae28-00056b00b6c5/Train_Segments_Neg_Detrend_8K/'
-  - './segments/fft/103e5f2a-0ae9-11ec-ae28-00056b00b6c5/Test_Segments_Neg_Detrend_8K/'
+  - './segments/fft/neg_edge_max_phi_max_theta_bg_sub/103e5f2a-0ae9-11ec-ae28-00056b00b6c5/Train_Segments_Detrend_8K/'
+  - './segments/fft/neg_edge_max_phi_max_theta_bg_sub/103e5f2a-0ae9-11ec-ae28-00056b00b6c5/Test_Segments_Detrend_8K/'
 
 num_training: 4
 
-all_combo_training: False
+all_combo_training: True
 
-fixed_training:
-  training_boards: # Used if all_combo_training is False
-    - 'board_2e'
-    - 'board_ca'
-    - 'board_fe'
-    - 'board_b6c5'
-  test_board: 'board_fd'
-
-eval:
-  test_board: 'board_fd'
 
 log_file: './logs/neg-backsub-maxphi-maxtheta-13class-big-text.log'
 
-model_name: 'dense-neg-maxphi-maxtheta-13class-big-text'
+model_name: 'dense-neg-backsub-maxphi-maxtheta-13class-big-text'
 
-dataset: 'backsub-variance-tuning' 
+dataset: 'new-variance-tuning' 
 
 fft_freq_bins: 4095 # half of the FFT segment length - 1
 
