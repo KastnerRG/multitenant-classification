@@ -14,12 +14,12 @@ python3 fft.py
 Once the ffts are computed we ready to train and test our classifier. The default configuration is a 13-way classification accuracy on 5-board,leave-one-out 
 cross-validation. This can be re-configured however one pleases in the configuration files. You may regenerate the training and classification used in our paper with the following:
 
-### Rising Transition Minimum Theta and Minimum Phi
+### Rising Transition Min Theta and Min Phi
 
-### Falling Transition Maximum Theta and Minimum Phi
+### Falling Transition Max Theta and Min Phi
 
-### Falling Transition Maximum Theta and Maximum Phi
+### Falling Transition Max Theta and Max Phi
 
-### Falling Transition Maximum Theta and Maximum Phi with Background Subtraction
+### Falling Transition Max Theta and Max Phi with Background Subtraction
 
-### Rising Transition Maximum Theta and Maximum Phi with Background Subtraction
+### Rising Transition Max Theta and Max Phi with Background Subtraction
