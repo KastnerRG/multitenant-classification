@@ -1,0 +1,27 @@
+Training on: ('board_b6c5', 'board_06c5', 'board_ca', 'board_2e')
+
+Testing on: board_fe
+val loss: 1.185563564300537
+val acc: 0.7005555629730225
+Training on: ('board_b6c5', 'board_06c5', 'board_ca', 'board_fe')
+
+Testing on: board_2e
+val loss: 0.7207179069519043
+val acc: 0.7677778005599976
+Training on: ('board_b6c5', 'board_06c5', 'board_2e', 'board_fe')
+
+Testing on: board_ca
+val loss: 0.5198706388473511
+val acc: 0.8330241441726685
+Training on: ('board_b6c5', 'board_ca', 'board_2e', 'board_fe')
+
+Testing on: board_06c5
+val loss: 0.7313762307167053
+val acc: 0.7771111130714417
+Training on: ('board_06c5', 'board_ca', 'board_2e', 'board_fe')
+
+Testing on: board_b6c5
+val loss: 0.7214372158050537
+val acc: 0.7771111130714417
+
+

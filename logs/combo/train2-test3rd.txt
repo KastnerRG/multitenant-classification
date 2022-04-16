@@ -1,0 +1,100 @@
+Training on: ('board_4b', 'board_fe')
+Testing on: board_2e
+val loss: 0.8352121710777283
+val acc: 0.7374444603919983
+Testing on: board_ca
+val loss: 0.427396684885025
+val acc: 0.8815555572509766
+Testing on: board_c5
+val loss: 0.5647255182266235
+val acc: 0.7943333387374878
+Training on: ('board_4b', 'board_ca')
+Testing on: board_2e
+val loss: 1.174085259437561
+val acc: 0.7095555663108826
+Testing on: board_fe
+val loss: 1.3869987726211548
+val acc: 0.7031111121177673
+Testing on: board_c5
+val loss: 1.0184428691864014
+val acc: 0.7395555377006531
+Training on: ('board_4b', 'board_c5')
+Testing on: board_2e
+val loss: 1.1424096822738647
+val acc: 0.6952221989631653
+Testing on: board_fe
+val loss: 1.4222040176391602
+val acc: 0.660444438457489
+Testing on: board_ca
+val loss: 0.7165508270263672
+val acc: 0.8194444179534912
+Training on: ('board_4b', 'board_2e')
+Testing on: board_fe
+val loss: 1.0700896978378296
+val acc: 0.6963333487510681
+Testing on: board_ca
+val loss: 0.4932687282562256
+val acc: 0.8521111011505127
+Testing on: board_c5
+val loss: 0.7785741686820984
+val acc: 0.7437777519226074
+Training on: ('board_fe', 'board_ca')
+Testing on: board_2e
+val loss: 0.8378450274467468
+val acc: 0.7473333477973938
+Testing on: board_c5
+val loss: 0.6813750267028809
+val acc: 0.7791110873222351
+Testing on: board_4b
+val loss: 0.4243883192539215
+val acc: 0.8686666488647461
+Training on: ('board_fe', 'board_c5')
+Testing on: board_2e
+val loss: 0.7689959406852722
+val acc: 0.750333309173584
+Testing on: board_ca
+val loss: 0.6252867579460144
+val acc: 0.832111120223999
+Testing on: board_4b
+val loss: 0.4696957468986511
+val acc: 0.8635555505752563
+Training on: ('board_fe', 'board_2e')
+Testing on: board_ca
+val loss: 0.6916165947914124
+val acc: 0.8392221927642822
+Testing on: board_c5
+val loss: 0.7722538709640503
+val acc: 0.7853333353996277
+Testing on: board_4b
+val loss: 0.5964953899383545
+val acc: 0.8231111168861389
+Training on: ('board_ca', 'board_c5')
+Testing on: board_2e
+val loss: 1.0970324277877808
+val acc: 0.7177777886390686
+Testing on: board_fe
+val loss: 1.0254435539245605
+val acc: 0.7374444603919983
+Testing on: board_4b
+val loss: 0.33724626898765564
+val acc: 0.903333306312561
+Training on: ('board_ca', 'board_2e')
+Testing on: board_fe
+val loss: 0.8937807679176331
+val acc: 0.7398889064788818
+Testing on: board_c5
+val loss: 0.9377659559249878
+val acc: 0.7505555748939514
+Testing on: board_4b
+val loss: 0.27983763813972473
+val acc: 0.917888879776001
+Training on: ('board_c5', 'board_2e')
+Testing on: board_fe
+val loss: 0.9719127416610718
+val acc: 0.7108888626098633
+Testing on: board_ca
+val loss: 0.7088238596916199
+val acc: 0.8193333148956299
+Testing on: board_4b
+val loss: 0.34571945667266846
+val acc: 0.8958888649940491

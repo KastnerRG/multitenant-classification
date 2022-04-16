@@ -1,0 +1,53 @@
+save_dir: './'
+
+boards:
+  - 'board_fd'
+  - 'board_ca'
+  - 'board_2e'
+  - 'board_b6c5'
+
+board_fd: 
+  - './segments/fft/fa510490-126f-11ec-ad4b-00056b0100fd/Train_Segments_Pos_Detrend_8K/'
+  - './segments/fft/fa510490-126f-11ec-ad4b-00056b0100fd/Test_Segments_Pos_Detrend_8K/'
+board_ca:
+  - './segments/fft/e5fb3dda-126f-11ec-af7d-00056b00f8ca/Train_Segments_Pos_Detrend_8K/'
+  - './segments/fft/e5fb3dda-126f-11ec-af7d-00056b00f8ca/Test_Segments_Pos_Detrend_8K/'
+board_2e:
+  - './segments/fft/d1d73bec-126f-11ec-bffa-00183e02912e/Train_Segments_Pos_Detrend_8K/'
+  - './segments/fft/d1d73bec-126f-11ec-bffa-00183e02912e/Test_Segments_Pos_Detrend_8K/'
+board_b6c5:
+  - './segments/fft/f0d751da-126f-11ec-bb74-00056b00b6c5/Train_Segments_Pos_Detrend_8K/'
+  - './segments/fft/f0d751da-126f-11ec-bb74-00056b00b6c5/Test_Segments_Pos_Detrend_8K/'
+
+num_training: 1
+
+log_file: './logs/pos-backsub-maxphi-maxtheta-13class.log'
+
+model_name: 'dense-pos-maxphi-maxtheta-13class'
+
+dataset: 'backsub-variance-tuning' # FPGA'22
+
+fft_freq_bins: 4095 # half of the FFT segment length - 1
+
+epochs: 50
+batch_size: 32
+learning_rate: 0.00003
+
+pca: false
+pca_variance: 0.95
+
+quantization: false
+logit_total_bits: 2
+logit_int_bits: 3
+activation_total_bits: 2
+activation_int_bits: 3
+
+convert:
+  OutputDir: dense-hls
+  XilinxPart: xc7z020clg200-1
+  Backend: Vivado
+  IOType: io_stream
+  Precision: ap_fixed<16,5>
+  ClockPeriod: 10
+  ReuseFactor: 200
+  Strategy: Resource

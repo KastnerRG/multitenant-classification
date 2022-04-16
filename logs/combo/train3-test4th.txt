@@ -1,0 +1,70 @@
+Training on: ('board_4b', 'board_fe', 'board_ca')
+Testing on: board_2e
+val loss: 0.7869421243667603
+val acc: 0.762666642665863
+Testing on: board_c5
+val loss: 0.5544033050537109
+val acc: 0.8061110973358154
+Training on: ('board_4b', 'board_fe', 'board_c5')
+Testing on: board_2e
+val loss: 0.7882146239280701
+val acc: 0.7672222256660461
+Testing on: board_ca
+val loss: 0.45977333188056946
+val acc: 0.8786666393280029
+Training on: ('board_4b', 'board_fe', 'board_2e')
+Testing on: board_ca
+val loss: 0.43333807587623596
+val acc: 0.8943333625793457
+Testing on: board_c5
+val loss: 0.5833210945129395
+val acc: 0.79666668176651
+Training on: ('board_4b', 'board_ca', 'board_c5')
+Testing on: board_2e
+val loss: 0.8989980816841125
+val acc: 0.7551110982894897
+Testing on: board_fe
+val loss: 1.1042801141738892
+val acc: 0.7348889112472534
+Training on: ('board_4b', 'board_ca', 'board_2e')
+Testing on: board_fe
+val loss: 0.9609456658363342
+val acc: 0.7468888759613037
+Testing on: board_c5
+val loss: 0.7473821640014648
+val acc: 0.7636666893959045
+Training on: ('board_4b', 'board_c5', 'board_2e')
+Testing on: board_fe
+val loss: 1.0535814762115479
+val acc: 0.7192222476005554
+Testing on: board_ca
+val loss: 0.5198282599449158
+val acc: 0.8573333621025085
+Training on: ('board_fe', 'board_ca', 'board_c5')
+Testing on: board_2e
+val loss: 0.7241417169570923
+val acc: 0.7825555801391602
+Testing on: board_4b
+val loss: 0.32375988364219666
+val acc: 0.9032222032546997
+Training on: ('board_fe', 'board_ca', 'board_2e')
+Testing on: board_4b
+val loss: 0.3125358819961548
+val acc: 0.9073333144187927
+Testing on: board_c5
+val loss: 0.6799644231796265
+val acc: 0.7901111245155334
+Training on: ('board_fe', 'board_c5', 'board_2e')
+Testing on: board_4b
+val loss: 0.3586971163749695
+val acc: 0.8912222385406494
+Testing on: board_ca
+val loss: 0.5559778809547424
+val acc: 0.8519999980926514
+Training on: ('board_ca', 'board_c5', 'board_2e')
+Testing on: board_4b
+val loss: 0.22532129287719727
+val acc: 0.9344444274902344
+Testing on: board_fe
+val loss: 0.8761947751045227
+val acc: 0.754111111164093

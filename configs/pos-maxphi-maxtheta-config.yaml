@@ -1,0 +1,44 @@
+save_dir: './'
+
+train_dir: 
+  - './segments/fft/1d829f96-fac9-11eb-ad79-00056b0106c5/Train_Segments_Pos_Detrend_8K/'
+  - './segments/fft/1d829f96-fac9-11eb-ad79-00056b0106c5/Test_Segments_Pos_Detrend_8K/'
+  - './segments/fft/30fd2910-fac9-11eb-90ef-00056b00b6c5/Train_Segments_Pos_Detrend_8K/'
+  - './segments/fft/30fd2910-fac9-11eb-90ef-00056b00b6c5/Test_Segments_Pos_Detrend_8K/'
+  - './segments/fft/be049352-fac9-11eb-aa9a-00056b00f8ca/Train_Segments_Pos_Detrend_8K/'
+  - './segments/fft/be049352-fac9-11eb-aa9a-00056b00f8ca/Test_Segments_Pos_Detrend_8K/'
+  - './segments/fft/2b144628-fc77-11eb-a109-00183e0248fe/Train_Segments_Pos_Detrend_8K/'
+  - './segments/fft/2b144628-fc77-11eb-a109-00183e0248fe/Test_Segments_Pos_Detrend_8K/'
+  
+test_dir: 
+  - './segments/fft/b58b2fca-fc76-11eb-ad56-00183e02912e/Train_Segments_Pos_Detrend_8K/'
+  - './segments/fft/b58b2fca-fc76-11eb-ad56-00183e02912e/Test_Segments_Pos_Detrend_8K/'
+
+model_name: 'dense-max-pos-only-8k-test2e'
+
+dataset: 'variance-tuning'
+
+fft_freq_bins: 4095 # half of the FFT segment length - 1
+
+epochs: 50
+batch_size: 32
+learning_rate: 0.00003
+
+pca: false
+pca_variance: 0.95
+
+quantization: false
+logit_total_bits: 2
+logit_int_bits: 3
+activation_total_bits: 2
+activation_int_bits: 3
+
+convert:
+  OutputDir: dense-hls
+  XilinxPart: xc7z020clg200-1
+  Backend: Vivado
+  IOType: io_stream
+  Precision: ap_fixed<16,5>
+  ClockPeriod: 10
+  ReuseFactor: 200
+  Strategy: Resource

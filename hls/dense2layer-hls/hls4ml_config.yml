@@ -1,0 +1,41 @@
+Backend: Vivado
+ClockPeriod: 10
+HLSConfig:
+  LayerName:
+    activation:
+      Implementation: Stable
+      Precision: ap_fixed<16,5>
+      ReuseFactor: 200
+      Strategy: Stable
+      exp_table_t: ap_fixed<18,8,AP_RND,AP_SAT>
+      inv_table_t: ap_fixed<18,8,AP_RND,AP_SAT>
+      table_size: 1024
+    input_1:
+      Precision: ap_fixed<16,5>
+      ReuseFactor: 200
+    q_activation:
+      Precision: ap_fixed<16,5>
+      ReuseFactor: 200
+    q_batch_normalization:
+      Precision: ap_fixed<16,5>
+      ReuseFactor: 200
+    q_batch_normalization_1:
+      Precision: ap_fixed<16,5>
+      ReuseFactor: 200
+    q_dense:
+      Precision: ap_fixed<16,5>
+      ReuseFactor: 200
+    q_dense_1:
+      Precision: ap_fixed<16,5>
+      ReuseFactor: 200
+  Model:
+    Precision: ap_fixed<16,5>
+    ReuseFactor: 200
+    Strategy: Resource
+IOType: io_stream
+Interface: s_axilite
+KerasModel: !keras_model 'dense2layer-hls/keras_model.h5'
+OutputDir: dense2layer-hls
+ProjectName: myproject
+Stamp: 26a90CeF
+XilinxPart: xc7z020clg400-1
