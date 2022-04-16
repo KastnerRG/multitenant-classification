@@ -15,11 +15,26 @@ Once the ffts are computed we ready to train and test our classifier. The defaul
 cross-validation. This can be re-configured however one pleases in the configuration files. You may regenerate the training and classification used in our paper with the following:
 
 ### Rising Transition Min Theta and Min Phi
+```
+python3 multitenant_fpga_net.py -c configs/pos-minphi-mintheta-config.yaml
+```
 
 ### Falling Transition Max Theta and Min Phi
+```
+python3 multitenant_fpga_net.py -c configs/neg-minphi-maxtheta-config.yaml
+```
 
 ### Falling Transition Max Theta and Max Phi
+```
+python3 multitenant_fpga_net.py -c configs/neg-maxphi-maxtheta-config.yaml
+```
 
 ### Falling Transition Max Theta and Max Phi with Background Subtraction
+```
+python3 multitenant_fpga_net.py -c configs/neg-backsub-maxphi-maxtheta-config.yaml
+```
 
 ### Rising Transition Max Theta and Max Phi with Background Subtraction
+```
+python3 multitenant_fpga_net.py -c configs/pos-backsub-maxphi-maxtheta-config.yaml
+```
